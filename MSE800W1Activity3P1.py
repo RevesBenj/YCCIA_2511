@@ -24,7 +24,7 @@ def fibonacci(n):
 def factorial(x):
     # Factorial is not defined for negative numbers
     if n < 0:
-        return "Error: Factorial is not defined for negative numbers."
+        return "Error: Factorial is  defined for positive numbers only."
 
     result = 1
     # Multiply all numbers from 1 to x
