@@ -1,5 +1,7 @@
 # -------------------------------------------------------
 # PART 1 – Fibonacci Series & Factorial (Without Packages)
+# Part1 details - Develop a Python program that uses functions to generate an N-length Fibonacci series and compute the factorial of N.
+# Do not use any external packages in this version. Include clear inline comments to show your understanding, then upload your code to GitHub and share the link.
 # Author: Benjelyn Reves Patiag
 # -------------------------------------------------------
 
@@ -17,14 +19,15 @@ def fibonacci(n):
         # Each number is the sum of the previous two numbers
         fib_list.append(fib_list[i-1] + fib_list[i-2])
 
-    return fib_list[:n]   # Return only N numbers
+    # Return only N numbers
+    return fib_list[:n]
 
 
 # Function to calculate factorial of x using a loop
 def factorial(x):
     # Factorial is not defined for negative numbers
     if n < 0:
-        return "Error: Factorial is not defined for negative numbers."
+        return "Error: Factorial is  defined for positive numbers only."
 
     result = 1
     # Multiply all numbers from 1 to x
