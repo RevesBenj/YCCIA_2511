@@ -30,7 +30,7 @@ def fibonacci(n):
 # Part 1 Solution: Function to calculate factorial of x using a loop
 def factorial(x):
     # Factorial is not defined for negative numbers
-    if n < 0:
+    if x < 0:
         return "Error: Factorial is  defined for positive numbers only."
 
     result = 1
@@ -52,15 +52,23 @@ def factorialMath(n):
 
 # ---------------- CALL MAIN PROGRAM ----------------
 if __name__ == "__main__":
-    # Take user input
-    n = int(input("Enter a positive number (N) for the length of the Fibonacci series: "))
+    try:
+        # Take user input
+        n = int(input("Enter a positive number (N) for the length of the Fibonacci series: "))
 
-    # Display Fibonacci series
-    print(f"\nFibonacci series of length {n}:")
-    print(fibonacci(n))
+        # Display Fibonacci series
+        print(f"\nFibonacci series of length {n}:")
+        print(fibonacci(n))
 
-    # Display factorial
-    print(f"\nFactorial of {n}: (calculated without packages)")
-    print(factorial(n))
-    print(f"\nFactorial of {n}: (calculated with the built-in math package)")
-    print(factorialMath(n))
+        # Display factorial
+        print(f"\nFactorial of {n}: (calculated without packages)")
+        print(factorial(n))
+        print(f"\nFactorial of {n}: (calculated with the built-in math package)")
+        print(factorialMath(n))
+
+
+    except ValueError as e:
+        print(f"Error: Invalid input. Please enter a positive integer. {e}")
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
