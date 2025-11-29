@@ -1,8 +1,8 @@
 # -------------------------------------------------------
-# W2-A4 Python OOP DEBUGGING
+# W2-A4.3 Python OOP DEBUGGING
 # Author: Benjelyn Reves Patiag
 # Date Created: 30-Nov-2025
-# Description: Instantiation - Create object of the class
+# Description: Update the code to be bug free. Explain your understanding of Self into the code. and adding __init__ function for n=5.
 # -------------------------------------------------------
 
 class MathSeries:
