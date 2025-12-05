@@ -55,11 +55,6 @@ if __name__ == "__main__":
     # Create object
     reader = FileReader(filename)
 
-    # Read the file
-    reader.read_file()
-
-    # Print file contents
-    #reader.print_content()
 
     # Count '*' characters
     star_count = reader.count_stars()
