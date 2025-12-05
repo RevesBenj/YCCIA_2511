@@ -17,13 +17,13 @@ class FileReader:
     def read_file(self):
         """Reads the entire file content and stores it."""
         try:
-            # Try UTF-8 first (best for modern files)
+            # need to encode UTF-8 first for modern file
             with open(self.filename, "r", encoding="utf-8") as file:
                 self.content = file.read()
 
         except UnicodeDecodeError:
             print("UTF-8 failed. Retrying using 'latin-1' encoding...")
-            # latin-1 never fails, but some characters may look odd.
+            # latin-1 never fails, but some characters may look off :).
             with open(self.filename, "r", encoding="latin-1") as file:
                 self.content = file.read()
 
