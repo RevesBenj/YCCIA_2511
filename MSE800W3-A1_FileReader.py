@@ -49,7 +49,7 @@ class FileReader:
 # ============================
 
 if __name__ == "__main__":
-    # Ask user for file name
+    # find and set the file
     filename = r"C:\Users\benje\PycharmProjects\YCCIA_2511\demo_file.txt" # input("Enter file path (e.g. D:/Benj/MSE/MSE800/Term1/demo_file.txt): ")
 
     # Create object
