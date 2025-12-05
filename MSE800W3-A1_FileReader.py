@@ -1,8 +1,8 @@
 # -------------------------------------------------------
 # Week 3 - Activity 1 File Reader
 # Author: Benjelyn Reves Patiag
-# Date Created: 2-Dec-2025
-# Description: File Reader
+# Date Created: 6-Dec-2025
+# Description: File Reader : Develop an OOP code that reads the file and prints the output. Then, add functionality to count the number of  * characters in the file.
 # -------------------------------------------------------
 
 
