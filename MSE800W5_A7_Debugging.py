@@ -8,11 +8,11 @@
 
 """
 Error Explanation:
-Variable start with double underscore like __age, Python change the name automatic so people cannot access or override easy in child class.
+Variable start with double underscore like __age, Python change the name automatic (name-mangling) so people cannot access or override easy in child class.
 So inside Person, when you write self.__age, Python actually save it as:
 self._Person__age
 Because of that, s1.__age is not exist in the object, so Python throw AttributeError.
-The correct and proper way is what you already do, using:
+The correct and proper way is using:
 s1.get_age()
 """
 
