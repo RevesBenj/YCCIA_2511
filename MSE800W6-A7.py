@@ -3,6 +3,15 @@
 # # Author: Benjelyn Reves Patiag
 # Date Created: 25-Jan- 2026
 # -------------------------------------------------------
+
+# Explanation: 
+# x is one item like 'a5'
+# x[0] → take first character (letter)
+# x[1:] → take number part
+# int() → change string number to real number
+# sorting first by letter, then by number
+
+
 data = ['a5', 'a2', 'b1', 'b3', 'c2']  # list values
 
 # sorted() use lambda to decide how sorting happen
