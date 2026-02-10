@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    container_name: car_rental_app
+    working_dir: /app
+    command: python main.py
+    volumes:
+      - .:/app
+      - ./app/data:/app/app/data
+    stdin_open: true
+    tty: true
+
+  sqliteweb:
+    image: coleifer/sqlite-web
+    container_name: car_rental_sqliteweb
+    depends_on:
+      - app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app/data:/data
+    command: ["sqlite_web", "/data/car_rental.db", "--host", "0.0.0.0", "--port", "8080"]
