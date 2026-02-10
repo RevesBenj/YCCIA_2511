@@ -34,7 +34,7 @@ It use **two containers**:
 Open terminal in project folder and run:
 ```bash
 docker compose up -d --build
-
+```
 
 ## This Will Do
 
@@ -58,3 +58,5 @@ To stop containers, run:
 
 ```bash
 docker compose down
+
+```
