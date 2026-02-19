@@ -1,4 +1,4 @@
-# Week 8 - Activity 4: Docker \_ multi-container
+# Week 8 - Activity 4: Docker - multi-container
 
 -   Author: Benjelyn Reves Patiag
 -   Date Created: 10 Feb 2026
@@ -41,8 +41,8 @@ docker compose up -d --build
 
 ## This Will Do
 
--   Build the app\
--   Start all containers\
+-   Build the app
+-   Start all containers
 -   Run program in background
 
 ------------------------------------------------------------------------
@@ -50,8 +50,7 @@ docker compose up -d --build
 ## View Database
 
 You can see SQLite tables and data here:\
-Open browser and go to:\
-http://localhost:8080/
+http://localhost:8080\
 or\
 http://127.0.0.1:8080/
 
@@ -72,54 +71,87 @@ docker compose down
 These steps are **optional**. Use them only if you want to manually run
 or inspect containers.
 
-### 1. Run the Application Manually Inside Container
+### Run the Application Manually
 
 ``` bash
 docker exec -it car_rental_app python main.py
 ```
 
 **Explanation:**\
-This command enters the running app container and executes the Python
-program manually.\
-Useful if you want to restart or test the app without restarting all
-containers.
+Runs the Python program inside the running container.
 
 ------------------------------------------------------------------------
 
-### 2. Check Running Containers
+### Check Running Containers
 
 ``` bash
 docker ps
 ```
 
 **Explanation:**\
-Shows all currently running Docker containers.\
-You can confirm if `car_rental_app` and `car_rental_sqliteweb` are
-running.
+Displays all running Docker containers.
 
 ------------------------------------------------------------------------
 
-### 3. Enter the sqliteweb Container
+### Enter the sqliteweb Container
 
 ``` bash
 docker exec -it car_rental_sqliteweb sh
 ```
 
 **Explanation:**\
-Opens a terminal session inside the SQLite Web container.\
-You can inspect files or debug inside the container.
+Opens terminal access inside the SQLite Web container.
 
 ------------------------------------------------------------------------
 
-### 4. Enter the App Container
+### Enter the App Container
 
 ``` bash
 docker exec -it car_rental_app sh
 ```
 
 **Explanation:**\
-Opens a terminal session inside your Python application container.\
-You can check environment variables, verify database path, or run
-commands manually.
+Opens terminal access inside the Python application container.
+
+------------------------------------------------------------------------
+
+# Docker Official Command References
+
+If you want to see the complete list of Docker commands, refer to the
+official documentation:
+
+## Docker CLI Reference
+
+https://docs.docker.com/reference/cli/docker/
+
+Includes commands like: - docker run - docker build - docker ps - docker
+exec - docker images - docker logs - docker compose
+
+------------------------------------------------------------------------
+
+## Docker Compose Reference
+
+https://docs.docker.com/reference/cli/docker/compose/
+
+Includes: - docker compose up - docker compose down - docker compose
+build - docker compose logs - docker compose exec
+
+------------------------------------------------------------------------
+
+## Docker Cheat Sheet (Official PDF)
+
+https://docs.docker.com/get-started/docker_cheatsheet.pdf
+
+------------------------------------------------------------------------
+
+## View Help Directly From Terminal
+
+``` bash
+docker --help
+docker compose --help
+docker run --help
+```
+
+These commands show detailed usage instructions.
 
 ------------------------------------------------------------------------
