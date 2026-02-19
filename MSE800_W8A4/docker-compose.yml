@@ -4,9 +4,11 @@ services:
     container_name: car_rental_app
     working_dir: /app
     command: python main.py
+    environment:
+      - DB_PATH=/data/car_rental.db
     volumes:
       - .:/app
-      - ./app/data:/app/app/data
+      - ./app/data:/data
     stdin_open: true
     tty: true
 
