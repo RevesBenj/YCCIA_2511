@@ -1,0 +1,2 @@
+# infrastructure_persistence package marker file..
+# We keep __init__.py to tell Python this folder is package, so import work correctly and project structure stay clean and layered.

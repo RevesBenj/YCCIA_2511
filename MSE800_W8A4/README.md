@@ -1,4 +1,4 @@
-# Week 8 - Activity 4: Docker - multi-container
+# Week 8 - Activity 4: Docker \_ multi-container
 
 -   Author: Benjelyn Reves Patiag
 -   Date Created: 10 Feb 2026
@@ -41,8 +41,8 @@ docker compose up -d --build
 
 ## This Will Do
 
--   Build the app
--   Start all containers
+-   Build the app\
+-   Start all containers\
 -   Run program in background
 
 ------------------------------------------------------------------------
