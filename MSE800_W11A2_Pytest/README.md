@@ -32,9 +32,9 @@ divide(10, 0)      # expect ValueError: Cannot divide by zero
 ```
 
 ## 3) Automated testing
-Run all tests:
+Run all tests in detailed:
 ```powershell
-pytest -q
+pytest -v
 ```
 
 Run tests + coverage (terminal report):
