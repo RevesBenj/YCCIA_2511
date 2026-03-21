@@ -2,9 +2,9 @@
 
 ***Brief Explanation :***
 decorator in BestieCare = function wrap another function it run first before actual view
-check login + role first
-if fail: block access
-if pass: run original view
+- check login + role first
+- if fail: block access
+- if pass: run original view
 
 ## Role-Based Decorator (BestieCare)
 
