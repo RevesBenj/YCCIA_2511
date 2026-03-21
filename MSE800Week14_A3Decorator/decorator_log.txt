@@ -1,0 +1,8 @@
+[2026-03-22 09:20:11] Calling add with args=(3, 5), kwargs={}
+[2026-03-22 09:20:11] add returned 8 | execution time: 0.000491 seconds
+[2026-03-22 09:20:11] Calling multiply with args=(2, 6), kwargs={}
+[2026-03-22 09:20:11] multiply returned 12 | execution time: 0.000516 seconds
+[2026-03-22 09:20:11] Calling divide with args=(10, 2), kwargs={}
+[2026-03-22 09:20:11] divide returned 5.0 | execution time: 0.000392 seconds
+[2026-03-22 09:20:11] Calling divide with args=(10, 0), kwargs={}
+[2026-03-22 09:20:11] ERROR in divide: division by zero | execution time: 0.000364 seconds
